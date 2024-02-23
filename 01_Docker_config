@@ -1,0 +1,20 @@
+// Docker in Gitpod
+
+1. Erweiterung Docker installieren (empfohlen)
+
+2. Docker downloaden + starten mit:
+docker run --name db_1 -e MYSQL_ROOT_PASSWORD=root -d mysql:8.3.0
+
+name des Containers: db_1   (kann natürlich geändert werden)
+passwort ist : root / (kann natürlich geändert werden)
+
+3. Login in die Bash des Docker-Containers:
+docker exec -it db_1 bash
+
+4. login als root in Mysql:
+mysql -u root -p
+
+dann passwort eingeben (root)  --> in LINUX wird beim Tippen kein pwd angezeigt!
+
+
+
